@@ -1,0 +1,211 @@
+/* основной цвет текста #212121; */
+/* дополнительный цвет текста #757575; */
+/* дополнительный второй #FFFFFF; */
+/* акцент цвета #2196F3; */
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --titlesecond-text-color: #ffffff;
+  --accent-text: #2196f3;
+}
+.page {
+  color: var(--primary-text-color);
+  background-color: #fff;
+  font-family: Roboto, sans-serif;
+}
+ul {
+  list-style: none;
+}
+/* header section */
+.logo,
+.logosecond {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo {
+  color: #000000;
+}
+
+.logo-accent {
+  color: var(--accent-text);
+}
+
+.site-nav a {
+  color: var(--primary-text-color);
+}
+
+.site-address a {
+  color: var(--title-text-color);
+}
+
+.site-nav a,
+.site-address a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav a:hover,
+.site-nav a:focus,
+.site-address .link:hover,
+.site-address .link:focus,
+.address-list a:hover,
+.address-list a:focus {
+  color: var(--accent-text);
+}
+
+.link.current {
+  color: var(--accent-text);
+}
+
+/* hero section */
+.hero {
+  background-color: #2f303a;
+}
+
+.hero-title {
+  color: var(--titlesecond-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.hero-btn {
+  color: #ffffff;
+  background-color: var(--accent-text);
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* benefits section */
+
+.benefits {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+.benefits-title,
+.herosecond-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits-title-after {
+  font-weight: 700;
+  line-height: 1.14;
+}
+
+.benefits-text {
+  color: var(--title-text-color);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* work section */
+
+.work-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* team section */
+
+.team-title-name,
+.team-title-text {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team-title-name {
+  font-weight: 500;
+}
+
+.team-title-text {
+  color: var(--title-text-color);
+  font-weight: 400;
+}
+
+/* address section */
+.address {
+  background-color: #2f303a;
+}
+
+.logosecond {
+  color: var(--titlesecond-text-color);
+}
+
+.address-list a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.address-list .street {
+  color: var(--titlesecond-text-color);
+}
+
+/* page-second */
+
+.herosecond-list {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.herosecond-list .link {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.herosecond-list .link:hover,
+.herosecond-list .link:focus {
+  color: #fff;
+  background-color: var(--accent-text);
+}
+
+.herosecond-title-after {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.herosecond-text {
+  color: var(--title-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
