@@ -23,7 +23,7 @@ ul {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
@@ -48,7 +48,7 @@ ul {
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 }
 
@@ -75,7 +75,7 @@ ul {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -109,7 +109,7 @@ ul {
 }
 
 .benefits-title-after {
-  line-height: 1.14;
+  line-height: 1.1;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -127,7 +127,7 @@ ul {
 .work-title,
 .team-title {
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -137,7 +137,7 @@ ul {
 .team-title-name,
 .team-title-text {
   font-size: 16px;
-  line-height: 1.19;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
@@ -180,7 +180,7 @@ ul {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.6;
   letter-spacing: 0.03em;
 }
 
