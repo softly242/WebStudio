@@ -72,6 +72,7 @@ ul {
 
 .hero-title {
   color: var(--titlesecond-text-color);
+  text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -93,11 +94,6 @@ ul {
 
 /* benefits section */
 
-.benefits {
-  font-size: 14px;
-  letter-spacing: 0.03em;
-}
-
 .benefits-title,
 .herosecond-title {
   position: absolute;
@@ -113,21 +109,23 @@ ul {
 }
 
 .benefits-title-after {
-  font-weight: 700;
   line-height: 1.14;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .benefits-text {
   color: var(--title-text-color);
-  font-weight: 400;
+
   line-height: 1.7;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 /* work section */
 
 .work-title,
 .team-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -149,7 +147,6 @@ ul {
 
 .team-title-text {
   color: var(--title-text-color);
-  font-weight: 400;
 }
 
 /* address section */
@@ -177,16 +174,14 @@ ul {
 
 /* page-second */
 
-.herosecond-list {
+.herosecond-list .link {
+  font-family: inherit;
+  cursor: pointer;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-}
-.herosecond-list .link {
-  font-family: inherit;
-  cursor: pointer;
 }
 
 .herosecond-list .link:hover,
@@ -196,7 +191,6 @@ ul {
 }
 
 .herosecond-title-after {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -204,7 +198,6 @@ ul {
 
 .herosecond-text {
   color: var(--title-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
