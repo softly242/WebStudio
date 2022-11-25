@@ -67,7 +67,14 @@ ul {
   align-items: center;
   border-bottom: 1px solid #ececec;
 }
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
 .link {
+  display: flex;
+  align-items: center;
   padding: 32px 0;
 }
 .site-nav {
