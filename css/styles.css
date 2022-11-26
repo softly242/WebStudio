@@ -26,14 +26,18 @@ ul {
   color: var(--primary-text-color);
   background-color: #fff;
   font-family: Roboto, sans-serif;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: auto auto;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
+
 img {
   display: block;
   max-width: 100%;
@@ -67,16 +71,25 @@ ul {
   align-items: center;
   border-bottom: 1px solid #ececec;
 }
-.icon-envelope {
-  width: 16px;
-  height: 12px;
+.icon-envelope,
+.icon-smartphone {
   margin-right: 10px;
+  fill: currentColor;
 }
+.icon-envelope:hover,
+.icon-smartphone:hover,
+.icon-envelope:focus,
+.icon-smartphone:focus {
+  fill: var(--accent-text);
+}
+
 .link {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 32px 0;
 }
+
 .site-nav {
   display: flex;
   margin-left: 93px;
@@ -124,9 +137,21 @@ ul {
 /* hero section */
 .hero {
   width: 100%;
-  background-color: #2f303a;
   padding: 200px 0 200px 0;
   text-align: center;
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img.jpg");
+  background-color: #2f303a;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -165,7 +190,20 @@ ul {
   padding: 94px 0;
   background-color: #ffffff;
 }
-
+.container-icons {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.icons-svg {
+  width: 70px;
+  height: 70px;
+  fill: currentColor;
+}
 .benefits-list {
   display: flex;
   align-items: flex-start;
