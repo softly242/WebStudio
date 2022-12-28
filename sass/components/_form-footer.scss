@@ -1,0 +1,53 @@
+.form-container {
+    position: relative;
+    width: 570px;
+    height: 86px;
+    margin-top: 72px;
+    margin-bottom: 94px;
+    margin-left: 93px;
+}
+.form-footer {
+    &__label {
+            @extend %title;
+        }
+
+&__input {
+    width: 358px;
+    height: 50px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $backgroundColor;
+    padding-left: 16px;
+    color: $secondaryColor;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+}
+.btn-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;}
+.btn-footer {
+
+&__container {
+    width: 24px;
+    height: 24px;
+}
+&__icon {
+    fill: $secondaryColor;
+    margin-left: 10px;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+}

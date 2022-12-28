@@ -1,0 +1,18 @@
+ul {
+   list-style: none;
+}
+.page {
+    color: $primaryColor;
+    background-color: $secondaryColor;
+    font-family: Roboto, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a:hover,
+a:focus {color: $accentColor;}

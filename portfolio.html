@@ -11,218 +11,212 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link href="./css/styles.css" rel="stylesheet" />
+    <link href="./dist/css/main.min.css" rel="stylesheet" >
   </head>
   <body class="page">
-    <header class="page-header">
-      <div class="container portfolio">
+    <header class="header">
+      <div class="container header__container container--border">
         <a href="./index.html" class="logo"
-          ><span class="logo-accent">Web</span>Studio</a
+          ><span class="logo__accent">Web</span>Studio</a
         >
-        <nav>
-          <ul class="site-nav">
-            <li class="item"><a href="./index.html" class="link">Студія</a></li>
-            <li class="item">
-              <a href="" class="link current">Портфоліо</a>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="./index.html" class="navigation__link ">Студія</a></li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link navigation__link--current">Портфоліо</a>
             </li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+            <li class="navigation__item"><a href="" class="navigation__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="site-address">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="icon-envelope" width="16" height="12">
+        <div class="connection">
+        <ul class="connection__list">
+          <li class="connection__item connection__item--margin-right">
+            <a href="mailto:info@devstudio.com" class="connection__link">
+              <svg class="connection__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="icon-smartphone" width="10" height="16">
+          <li class="connection__item">
+            <a href="tel:+380961111111" class="connection__link">
+              <svg class="connection__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
+        </div>
       </div>
     </header>
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="herosecond-title">Перелік силок</h1>
-          <ul class="herosecond-list">
-            <li><button type="button" class="link">Усі</button></li>
+          <h1 class="section__title visually-hidden">Перелік силок</h1>
+          <ul class="list-btn">
+            <li><button type="button" class="list-btn__btn">Усі</button></li>
             <li>
-              <button type="button" class="link">Веб-сайти</button>
+              <button type="button" class="list-btn__btn">Веб-сайти</button>
             </li>
-            <li><button type="button" class="link">Додатки</button></li>
-            <li><button type="button" class="link">Дизайн</button></li>
+            <li><button type="button" class="list-btn__btn">Додатки</button></li>
+            <li><button type="button" class="list-btn__btn">Дизайн</button></li>
             <li>
-              <button type="button" class="link">Маркетинг</button>
+              <button type="button" class="list-btn__btn">Маркетинг</button>
             </li>
           </ul>
-          <ul class="herosecond-list-after">
-            <li class="item">
-              <a href="#" class="item-link">
-                <div class="title-container-herosecond">
+          <ul class="card">
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <div class="card__container">
                   <img src="./images/website.jpg" alt="Веб-сайт" width="370" />
 
-                  <p class="title-herosecond-img">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
 
-                <div class="herosecond-list-container">
-                  <h2 class="herosecond-title-after">Технокряк</h2>
-                  <p class="herosecond-text">Веб-сайт</p>
+                <div class="card__container-name">
+                  <h2 class="card__title">Технокряк</h2>
+                  <p class="card__container-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="item-link">
-                <div class="title-container-herosecond">
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <div class="card__container">
                   <img src="./images/design.jpg" alt="Баскетбол" width="370" />
-                  <p class="title-herosecond-img">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="herosecond-list-container">
-                  <h2 class="herosecond-title-after">
+                <div class="card__container-name">
+                  <h2 class="card__title">
                     Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="herosecond-text">Дизайн</p>
+                  <p class="card__container-text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="item-link">
-                <div class="title-container-herosecond">
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <div class="card__container">
                   <img src="./images/addition.jpg" alt="Риба" width="370" />
-                  <p class="title-herosecond-img">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="herosecond-list-container">
-                  <h2 class="herosecond-title-after">Ресторан Seafood</h2>
-                  <p class="herosecond-text">Додаток</p>
+                <div class="card__container-name">
+                  <h2 class="card__title">Ресторан Seafood</h2>
+                  <p class="card__container-text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="item-link">
-                <div class="title-container-herosecond">
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <div class="card__container">
                   <img
                     src="./images/marketing.jpg"
                     alt="Навушники"
                     width="370"
                   />
-                  <p class="title-herosecond-img">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="herosecond-list-container">
-                  <h2 class="herosecond-title-after">Проєкт Prime</h2>
-                  <p class="herosecond-text">Маркетинг</p>
+                <div class="card__container-name">
+                  <h2 class="card__title">Проєкт Prime</h2>
+                  <p class="card__container-text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="item-link">
-                <div class="title-container-herosecond">
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <div class="card__container">
                   <img src="./images/addition2.jpg" alt="Бокси" width="370" />
-                  <p class="title-herosecond-img">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="herosecond-list-container">
-                  <h2 class="herosecond-title-after">Проєкт Boxes</h2>
-                  <p class="herosecond-text">Додаток</p>
+                <div class="card__container-name">
+                  <h2 class="card__title">Проєкт Boxes</h2>
+                  <p class="card__container-text">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="item-link">
-                <div class="title-container-herosecond">
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <div class="card__container">
                   <img src="./images/website2.jpg" alt="Монітор" width="370" />
-                  <p class="title-herosecond-img">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="herosecond-list-container">
-                  <h2 class="herosecond-title-after">
+                <div class="card__container-name">
+                  <h2 class="card__title">
                     Inspiration has no Borders
                   </h2>
-                  <p class="herosecond-text">Веб-сайт</p>
+                  <p class="card__container-text">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="item-link">
-                <div class="title-container-herosecond">
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <div class="card__container">
                   <img src="./images/design2.jpg" alt="Журнал" width="370" />
-                  <p class="title-herosecond-img">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="herosecond-list-container">
-                  <h2 class="herosecond-title-after">
+                <div class="card__container-name">
+                  <h2 class="card__title">
                     Видання Limited Edition
                   </h2>
-                  <p class="herosecond-text">Дизайн</p>
+                  <p class="card__container-text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="item-link">
-                <div class="title-container-herosecond">
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <div class="card__container">
                   <img src="./images/marketing2.jpg" alt="Бірка" width="370" />
-                  <p class="title-herosecond-img">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="herosecond-list-container">
-                  <h2 class="herosecond-title-after">Проєкт LAB</h2>
-                  <p class="herosecond-text">Маркетинг</p>
+                <div class="card__container-name">
+                  <h2 class="card__title">Проєкт LAB</h2>
+                  <p class="card__container-text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="item">
-              <a href="#" class="item-link">
-                <div class="title-container-herosecond">
+            <li class="card__item">
+              <a href="#" class="card__link">
+                <div class="card__container">
                   <img src="./images/addition2.jpg" alt="Ноутбук" width="370" />
-                  <p class="title-herosecond-img">
+                  <p class="card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
-                <div class="herosecond-list-container">
-                  <h2 class="herosecond-title-after">Growing Business</h2>
-                  <p class="herosecond-text">Додаток</p>
+                <div class="card__container-name">
+                  <h2 class="card__title">Growing Business</h2>
+                  <p class="card__container-text">Додаток</p>
                 </div>
               </a>
             </li>
@@ -230,82 +224,81 @@
         </div>
       </section>
     </main>
-    <footer class="address">
-      <div class="container footer">
+     <footer class="footer">
+      <div class="container container--flex">
         <div class="container-address">
-          <a href="./index.html" class="logosecond"
-            ><span class="logo-accent">Web</span>Studio</a
+          <a href="./index.html" class="logo logo--white"
+            ><span class="logo__accent">Web</span>Studio</a
           >
-          <address class="address-container">
-            <ul class="address-list">
-              <li class="item">
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
                 <a
                   href="https://goo.gl/maps/iWu7TuQvC1Y19SZP6"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="street"
+                  class="address__link address__link--white "
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="item">
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
               </li>
-              <li class="item">
-                <a href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="icon-container">
-          <h2 class="icon-container-title">приєднуйтесь</h2>
-          <ul class="icon-footer-list">
-            <li class="icon-footer-element">
-              <a href="" class="icon-footer-link">
-                <svg class="icon-footer">
+          <h2 class="icon-container__title">приєднуйтесь</h2>
+          <ul class="icon-container__list">
+            <li class="icon-container__item">
+              <a href="" class="icon-container__link">
+                <svg class="icon-container__icon">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-footer-element">
-              <a href="" class="icon-footer-link">
-                <svg class="icon-footer">
+            <li class="icon-container__item">
+              <a href="" class="icon-container__link">
+                <svg class="icon-container__icon">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
 
-            <li />
-            <li class="icon-footer-element">
-              <a href="" class="icon-footer-link">
-                <svg class="icon-footer">
+            <li class="icon-container__item">
+              <a href="" class="icon-container__link">
+                <svg class="icon-container__icon">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="icon-footer-element">
-              <a href="" class="icon-footer-link">
-                <svg class="icon-footer">
+            <li class="icon-container__item">
+              <a href="" class="icon-container__link">
+                <svg class="icon-container__icon">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-         <div class="forma-footer-container">
-           <form> 
-          <label for="email" class="icon-container-title">Підпишіться на розсилку</label>
-        
+        <div class="form-container">
+          
+          <form class="form-footer">
+            <label for="email" class="form-footer__label">Підпишіться на розсилку</label>
             <input
               type="email"
               name="email"
               placeholder="E-mail"
-              class="input-footer"
+              class="form-footer__input"
             />
-            <div class="bth-container-footer">
-              <button type="submit" class="bth-modal footer">
+            <div class="btn-container">
+             <button type="submit" class="btn-footer">
                 Підписатися
-                <span class="bth-icon-footer">
-                <svg  class="subscribe-icon">
+                <span class="btn-footer__container">
+                <svg  class="btn-footer__icon">
               <use href="./images/icons.svg#icon-icon-send"></use>
               </span>
               </button>

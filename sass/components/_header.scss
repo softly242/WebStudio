@@ -1,0 +1,82 @@
+.logo {
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: $complementaryColor;
+    display: block;
+
+  &__accent {
+    color: $accentColor ;
+}
+}
+
+.logo--white {
+    color: $secondaryColor;
+}
+.navigation {
+
+&__list {
+        display: flex;
+        margin-left: 93px;
+        }
+&__item:not(:last-child) {
+                    margin-right: 50px;
+                }
+&__link {
+    @extend %link;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0;
+    color: $primaryColor;
+}
+
+&__link--current {
+    position: relative;
+    color: $accentColor;
+}
+
+&__link--current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 2px;
+    background-color: $accentColor;
+}
+}
+
+.connection {
+    display: flex;
+    margin-left: auto;
+&__list {
+        display: flex;
+
+    }
+&__item--margin-right {
+    margin-right: 30px;
+}
+
+&__link {
+    @extend %link;
+    color: $titleColor;
+    display: inline-flex;
+    align-items: center;
+}
+
+&__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+}
+
+
+
+
+
