@@ -1,18 +1,27 @@
 .container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: auto auto;
-   /*  outline: 2px solid tomato; */
+  /* width: 1200px; */
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto auto;
+  outline: 2px solid tomato;
 }
+
 .header__container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  /* position: relative; */
 }
 
 .container--border {
-    border-bottom: 1px solid $borderColor;
+  border-bottom: 1px solid $borderColor;
 }
+
 .container--flex {
+  @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }

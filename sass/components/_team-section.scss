@@ -1,36 +1,42 @@
 .team-list {
-    display: flex;
+  @extend %list;
 
-&__item {
-    width: 270px;
-    margin-right: 30px;
+  &__item {
+    @extend %item;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 
-&__item:nth-child(4n) {
+  &__item:nth-child(4n) {
     margin-right: 0;
-}
+  }
+  &__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 
-
-&__container {
+  &__container {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: $secondaryColor;
-}
+    @media screen and (max-width: 1199px) {
+      padding-bottom: 24px;
+    }
+  }
 
-&__title {
+  &__title {
     @extend %team-list;
     font-weight: 500;
-}
+  }
 
-&__text {
+  &__text {
     @extend %team-list;
     color: $titleColor;
     margin-top: 10px;
-}
+  }
 
-&__container-network {
+  &__container-network {
     @extend %flex-center;
     justify-content: center;
     width: 206px;
@@ -38,8 +44,8 @@
     margin-top: 16px;
     margin-left: auto;
     margin-right: auto;
-}
-&__link {
+  }
+  &__link {
     @extend %flex-center;
     justify-content: center;
     border-radius: 50%;
@@ -48,29 +54,25 @@
     color: #afb1b8;
     margin-right: 10px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-&__link:hover,
-&__link:focus {
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
     background-color: $accentColor;
     color: $secondaryColor;
-}
+  }
 
-&__link:nth-child(4) {
+  &__link:nth-child(4) {
     margin-right: 0px;
-}
+  }
 
-&__icon {
+  &__icon {
     width: 20px;
     height: 20px;
     fill: currentColor;
-}
-&__icon:hover,
-&__icon:focus {
+  }
+  &__icon:hover,
+  &__icon:focus {
     fill: currentColor;
+  }
 }
-}
-
-
-
-

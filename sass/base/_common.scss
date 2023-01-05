@@ -1,18 +1,33 @@
 ul {
-   list-style: none;
+  list-style: none;
 }
 .page {
-    color: $primaryColor;
-    background-color: $secondaryColor;
-    font-family: Roboto, sans-serif;
-    margin-left: auto;
-    margin-right: auto;
+  color: $primaryColor;
+  background-color: $secondaryColor;
+  font-family: Roboto, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 a:hover,
-a:focus {color: $accentColor;}
+a:focus {
+  color: $accentColor;
+}
+
+.scroll-block {
+  overflow: hidden;
+}

@@ -19,7 +19,7 @@
         <a href="./index.html" class="logo"
           ><span class="logo__accent">Web</span>Studio</a
         >
-        <nav class="navigation">
+       <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item"><a href="#" class="navigation__link navigation__link--current">Студія</a></li>
             <li class="navigation__item">
@@ -39,14 +39,64 @@
           </li>
           <li class="connection__item">
             <a href="tel:+380961111111" class="connection__link">
-              <svg class="connection__icon" width="10" height="16">
+              <svg class="connection__icon connection__icon--sizes" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
           </li>
         </ul>
         </div>
+        <button type="button" class="menu-open" aria-label="Перемикач мобільного меню">
+          <svg class="menu-open__icon" width="40px" height="40px">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
+      <div class="mobile-menu is-hidden" aria-expanded="false">
+        <div class="mobile-menu__container">
+        <button type="button" class="menu-close" aria-label="Перемикач мобільного меню">
+<svg class="menu-close__icon" width="40px" height="40px">
+            <use  href="./images/icons.svg#icon-close_40px"></use>
+          </svg>
+          </button>
+      
+      <nav class="navigation-menu">
+          <ul class="navigation-menu__list">
+            <li class="navigation-menu__item"><a href="#" class="navigation-menu__link">Студія</a></li>
+            <li class="navigation-menu__item">
+              <a href="./portfolio.html" class="navigation-menu__link">Портфоліо</a>
+            </li>
+            <li class="navigation-menu__item"><a href="" class="navigation-menu__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="connection-menu">
+        <ul class="connection-menu__list">
+          <li class="connection-menu__item ">
+            <a href="tel:+380961111111" class="connection-menu__tel">
+             +38 096 111 11 11</a
+            >
+          </li>
+          <li class="connection-menu__item">
+            
+            <a href="mailto:info@devstudio.com" class="connection-menu__email">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        </div>
+        <div class="social-media">
+          <ul class="social-media__list">
+            <li class="social-media__item"><a href="#" class="social-media__link">Instagram</a></li>
+            <div class="social-media__divider"></div>
+            <li class="social-media__item"><a href="#" class="social-media__link">Twitter</a></li>
+            <div class="social-media__divider"></div>
+            <li class="social-media__item"><a href="#" class="social-media__link">Facebook</a></li>
+            <div class="social-media__divider"></div>
+            <li class="social-media__item"><a href="#" class="social-media__link">LinkedIn</a></li>
+          </ul>
+        </div>
+        </div>
+</div>
     </header>
     <main>
       <section class="hero">
@@ -119,19 +169,21 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-list__item">
-              <img src="./images/leptop.jpg" alt="ноутбук" width="370" />
+              <img srcset="./images/img/desktop1x1w.jpg 1x, ./images/img/desktop2x1w.jpg 2x" src="./images/img/desktop1x1w.jpg" alt="ноутбук" width="370" />
               <div class="work-list__container-title">
                 <p class="work-list__title">Десктопні додатки</p>
               </div>
             </li>
             <li class="work-list__item">
-              <img src="./images/telephon.jpg" alt="телефон" width="370" />
+              <img srcset="./images/img/desktop1x2w.jpg 1x, ./images/img/desktop2x2w.jpg 2x" 
+              
+              src="./images/img/desktop1x2w.jpg" alt="телефон" width="370" />
               <div class="work-list__container-title">
                 <p class="work-list__title">Мобільні додатки</p>
               </div>
             </li>
             <li class="work-list__item">
-              <img src="./images/tablet.jpg" alt="планшет" width="370" />
+              <img srcset="./images/img/desktop1x3w.jpg 1x, ./images/img/desktop2x3w.jpg 2x" src="./images/img/desktop1x3w.jpg" alt="планшет" width="370" />
               <div class="work-list__container-title">
                 <p class="work-list__title">Дизайнерські рішення</p>
               </div>
@@ -144,7 +196,19 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__item">
-              <img src="./images/boy1.jpg" alt="чоловік1" width="270" />
+              
+
+              <picture>
+                <source srcset="./images/img/desktop1x1.jpg 1x, ./images/img/desktop2x1.jpg 2x" 
+                media="(min-width:1200px)">
+                
+                <source srcset="./images/img/tablet1x1.jpg 1x, ./images/img/tablet2x1.jpg 2x" 
+                media="(min-width:768px)">
+                <source srcset="./images/img/mobile1x1.jpg 1x, ./images/img/mobile2x1.jpg 2x" 
+                media="(min-width:480px)">
+                <img srcset="./images/img/desktop1x1.jpg 1x, ./images/img/desktop2x1.jpg 2x" 
+              src="./images/img/desktop1x1.jpg" alt="чоловік1" width="450" height="460"/>
+              </picture>
               <div class="team-list__container">
                 <h3 class="team-list__title">Ігор Дем'яненко</h3>
                 <p class="team-list__text">Product Designer</p>
@@ -170,7 +234,19 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/girl.jpg" alt="жінка" width="270" />
+              <picture>
+                <source srcset="./images/img/desktop1x2.jpg 1x, ./images/img/desktop2x2.jpg 2x" 
+                media="(min-width:1200px)">
+                
+                <source srcset="./images/img/tablet1x2.jpg 1x, ./images/img/tablet2x2.jpg 2x" 
+                media="(min-width:768px)">
+                <source srcset="./images/img/mobile1x2.jpg 1x, ./images/img/mobile2x2.jpg 2x" 
+                media="(min-width:480px)">
+                <img srcset="./images/img/desktop1x2.jpg 1x, ./images/img/desktop2x2.jpg 2x" 
+              src="./images/img/desktop1x2.jpg" alt="жінка" width="450" 
+              />
+              </picture>
+            
               <div class="team-list__container">
                 <h3 class="team-list__title">Ольга Рєпіна</h3>
                 <p class="team-list__text">Frontend Developer</p>
@@ -196,7 +272,18 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/boy2.jpg" alt="чоловік2" width="270" />
+                <picture>
+                <source srcset="./images/img/desktop1x3.jpg 1x, ./images/img/desktop2x3.jpg 2x" 
+                media="(min-width:1200px)">
+                
+                <source srcset="./images/img/tablet1x3.jpg 1x, ./images/img/tablet2x3.jpg 2x" 
+                media="(min-width:768px)">
+                <source srcset="./images/img/mobile1x3.jpg 1x, ./images/img/mobile2x3.jpg 2x" 
+                media="(min-width:480px)">
+                <img srcset="./images/img/desktop1x3.jpg 1x, ./images/img/desktop2x3.jpg 2x" 
+              src="./images/img/desktop1x3.jpg" alt="чоловік2" width="450" 
+              />
+              </picture>
               <div class="team-list__container">
                 <h3 class="team-list__title">Микола Тарасов</h3>
                 <p class="team-list__text">Marketing</p>
@@ -222,7 +309,18 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/boy3.jpg" alt="чоловік3" width="270" />
+                <picture>
+                <source srcset="./images/img/desktop1x4.jpg 1x, ./images/img/desktop2x4.jpg 2x" 
+                media="(min-width:1200px)">
+                
+                <source srcset="./images/img/tablet1x4.jpg 1x, ./images/img/tablet2x4.jpg 2x" 
+                media="(min-width:768px)">
+                <source srcset="./images/img/mobile1x4.jpg 1x, ./images/img/mobile2x4.jpg 2x" 
+                media="(min-width:480px)">
+                <img srcset="./images/img/desktop1x4.jpg 1x, ./images/img/desktop2x4.jpg 2x" 
+              src="./images/img/desktop1x4.jpg" alt="чоловік3" width="450" 
+              />
+              </picture>
               <div class="team-list__container">
                 <h3 class="team-list__title">Михайло Єрмаков</h3>
                 <p class="team-list__text">UI Designer</p>
@@ -449,7 +547,7 @@
                   <use href="./images/icons.svg#icon-Vector-1"></use>
                 </svg>
               </span>
-              Погоджуюся з розсилкою та приймаю
+              <span class="checkbox__label-text">Погоджуюся з розсилкою та приймаю</span>
               <a href="" class="checkbox__link"> Умови договору</a>
             </label>
           </div>
@@ -457,6 +555,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

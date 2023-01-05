@@ -1,39 +1,46 @@
 .backdrop {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    opacity: 1;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
-&.is-hidden {
+  &.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-}
+  }
 }
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 528px;
-    height: 581px;
-    background-color: $secondaryColor;
-    border-radius: 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 40px;
-.backdrop.is-hidden & {
-        transform: translate(-50%, -50%) scale(0.5);
-    }
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow-y: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* width: 528px; */
+  width: calc(100% - 30px);
+  max-width: 450px;
+  /* height: 581px; */
+  height: fit-content;
+  max-height: calc(100% - 20px);
+  background-color: $secondaryColor;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+  }
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
 
-&__btn-close {
+  &__btn-close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -48,27 +55,28 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: $complementaryColor;
     padding: 0px;
-}
+  }
 
-&__bth-icon {
+  &__bth-icon {
     width: 18px;
     height: 18px;
     fill: currentColor;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__bth-icon:hover,
-&__bth-icon:focus {
+  &__bth-icon:hover,
+  &__bth-icon:focus {
     color: $accentColor;
-}
+  }
 
-&__title {
+  &__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    /* line-height: 1.15; */
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: $primaryColor;
     margin-bottom: 12px;
-}
+  }
 }
